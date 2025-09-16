@@ -1,0 +1,19 @@
+name: rag_llm_cardiovascular_screening_application
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10.12
+  - pytorch-cpu==2.5.1 # Needs to be installed by conda
+  - pip  # For downloading Python libraries
+  - pip:
+    - datasets # For accessing Hugging Face datasets
+    - fastapi # For Implementing API
+    - uvicorn[standard] # For serving FastAPI apps
+    - requests # For making HTTP Requests
+    - streamlit # For creating Streamlit Application
+    - transformers==4.47.0
+    - sentence-transformers
+    - chromadb
+    - sentencepiece==0.2.0
+    - numpy
